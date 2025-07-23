@@ -1,0 +1,316 @@
+{
+  "data": [
+    {
+      "id": 4,
+      "question": "我會覺得頭重、頭昏不舒服。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "我會覺得疲倦或無力不想動。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "突然站起來時，我會覺得眼前發黑。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "我會覺得眼睛乾澀，或看東西不清楚。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "我的胸、腹部或四肢會悶痛不舒服。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "我會覺得睡眠時間夠，但仍想睡覺或睡不飽。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "我會覺得氣不夠，需要深呼吸。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "我會覺得胸口悶悶或緊緊的，好像有東西壓著。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "我會感到腰部、膝蓋或足跟酸軟、疼痛、無力或發冷。",
+      "options": [
+        {
+          "label": "完全不會",
+          "value": 1
+        },
+        {
+          "label": "稍微會",
+          "value": 2
+        },
+        {
+          "label": "中等程度會",
+          "value": 3
+        },
+        {
+          "label": "很會",
+          "value": 4
+        },
+        {
+          "label": "最嚴重會",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "我會覺得呼吸深度短淺或喘。",
+      "options": [
+        {
+          "label": "從來沒有",
+          "value": 1
+        },
+        {
+          "label": "偶爾有",
+          "value": 2
+        },
+        {
+          "label": "一半有一半沒有",
+          "value": 3
+        },
+        {
+          "label": "常常有",
+          "value": 4
+        },
+        {
+          "label": "一直都有",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "我會口渴、嘴巴乾、嘴唇乾燥龜裂，且喝水後很快又口渴。",
+      "options": [
+        {
+          "label": "從來沒有",
+          "value": 1
+        },
+        {
+          "label": "偶爾有",
+          "value": 2
+        },
+        {
+          "label": "一半有一半沒有",
+          "value": 3
+        },
+        {
+          "label": "常常有",
+          "value": 4
+        },
+        {
+          "label": "一直都有",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "姿勢改變時，我會覺得天旋地轉。",
+      "options": [
+        {
+          "label": "從來沒有",
+          "value": 1
+        },
+        {
+          "label": "偶爾有",
+          "value": 2
+        },
+        {
+          "label": "一半有一半沒有",
+          "value": 3
+        },
+        {
+          "label": "常常有",
+          "value": 4
+        },
+        {
+          "label": "一直都有",
+          "value": 5
+        }
+      ]
+    }
+  ]
+}

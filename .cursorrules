@@ -1,0 +1,19 @@
+# Project: Next.js React TypeScript Application
+
+## General
+- This is an Next.js React TypeScript application.
+- Use Tailwind CSS for styling.
+- Use Zustand for state management.
+- File names are in lowercase and camelCase.
+
+## File Structure
+
+- src/pages/: Pages. 
+- src/data/: Data.
+- src/components/: Components.
+- src/features/: Features.
+- src/hooks/: Hooks.
+- src/lib/: Libraries.
+- src/types/: Types.
+- src/services/: Services.
+- src/utils/: Utilities.

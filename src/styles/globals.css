@@ -1,0 +1,310 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* 預設字體大小 (適用最小螢幕 320px) */
+  font-size: 10px;
+  color: #002864;
+}
+
+/* * 關於螢幕尺寸 */
+/* Samsung Galaxy S20 Ultra */
+/* 螢幕解析度 3200x1440 pixels (WQHD+) */
+/* 像素密度 DPR, Device Pixel Ratio = 3.5 */
+/* 直立模式 window.innerWidth = 1440/3.5 = 411.42857142857144 ≒ 412 */
+
+/* iPhone 12 Pro 2532x1170 DPR:3 */
+/* 直立模式 window.innerWidth = 1170/3 = 390 */
+
+/* 一般手機直立 (≥ 375px) */
+/* 360px 是 Samsung Galaxy S8+ 的寬度 */
+/* 375px 是 iPhone SE 的寬度 */
+/* @media screen and (min-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+} */
+
+/* 大尺寸手機直立 (≥ 414px) */
+/* 412px 是 Pixel 7、Samsung Galaxy S20 Ultra 的寬度 */
+/* 414px 是 iPhone XR 的寬度 */
+/* 430px 是 iPhone 14 Pro Max 的寬度 */
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* 32D直立 (≥ 700px) */
+/* 3840x2160 DPR:3 */
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* sm - 小螢幕裝置 (≥ 640px) */
+/* @media screen and (min-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+} */
+
+/* md - 平板裝置、小平板直立 (≥ 768px) */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* lg - 筆電螢幕、大平板直立 (≥ 1024px) */
+/* @media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+} */
+
+/* 2xl - 大螢幕桌機 (≥ 1536px) */
+/* @media screen and (min-width: 1536px) {
+  html {
+    font-size: 20px;
+  }
+} */
+
+body {
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: 
+    /* 通用無襯線字體 */
+    -apple-system,
+    BlinkMacSystemFont,
+    /* macOS, iOS */ 'Segoe UI',
+    /* Windows */ Roboto,
+    /* Android */ Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    /* Linux 桌面環境 */ 'Helvetica Neue',
+    sans-serif,
+    /* 繁體中文字體 */ 'PingFang TC',
+    /* macOS, iOS 繁體中文 */ 'Microsoft JhengHei',
+    /* Windows 繁體中文 */ 'Noto Sans TC',
+    /* 多平台支援的繁體中文 Google 字體 */ 'Source Han Sans TC',
+    /* 思源黑體 繁體 */ 'Apple LiGothic',
+    /* 舊版 macOS */ 'WenQuanYi Micro Hei',
+    /* Linux */ /* 標準的無襯線字體 */ sans-serif;
+
+  /*font-size: 1.6rem; */ /* 回到 16px 的可讀大小 */
+}
+
+/* 行動裝置調整 */
+/* @media (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+} */
+
+@media (orientation: portrait) {
+  .bcq-background {
+    background-position: 25% center !important;
+    height: 100vh; /* 使用視口高度 */
+    height: -webkit-fill-available; /* 針對 iOS Safari */
+  }
+}
+
+/* 針對不同寬度的設備進行微調 */
+@media (orientation: portrait) and (max-width: 720px) {
+  .bcq-background {
+    background-position: 30% center !important;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .bcq-background {
+    background-position: 35% center !important;
+  }
+}
+
+/* 確保內容容器也保持全屏 */
+#__next {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+/* 防止 iOS Safari 的橡皮筋效果 */
+html {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@layer components {
+  .input-range {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #858585;
+    height: 2px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .input-range:focus,
+  .input-range:active {
+    outline: none;
+  }
+  .input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 2px solid #856292;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+  .floating-panel-content {
+    @apply w-full h-full bg-white relative;
+  }
+
+  .floating-panel-inner {
+    @apply relative w-full h-full p-[2.5rem] overflow-y-auto;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #856292 #ffffff;
+  }
+
+  /*
+  .floating-panel-inner::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .floating-panel-inner::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  .floating-panel-inner::-webkit-scrollbar-thumb {
+    background-color: #856292;
+    border-radius: 3px;
+  }
+  */
+
+  .text-privacy-policy {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.95rem /* 32px */;
+    padding-top: 1.5rem /* 24px */;
+  }
+
+  .floating-askprofile-content {
+    @apply w-full h-full relative mt-[20vh];
+  }
+
+  /* 大尺寸手機直立 (≥ 412px) */
+  @media screen and (min-width: 412px) {
+    .floating-askprofile-content {
+      margin-top: 30vh;
+    }
+  }
+
+  /* 32D直立 (≥ 700px) */
+  @media screen and (min-width: 700px) {
+    .floating-askprofile-content {
+      margin-top: 38vh;
+    }
+  }
+
+  .floating-askprofile-inner {
+    @apply relative w-full h-full overflow-y-auto;
+  }
+}
+
+@layer utilities {
+  .scroll-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.bcq-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* 如果在某些 Android 設備上仍有問題，可以嘗試添加 */
+@supports (-webkit-touch-callout: none) {
+  .bcq-background {
+    height: -webkit-fill-available;
+  }
+}
+
+.choosing {
+  background-color: #004099;
+  color: #ffffff;
+}
+
+#report {
+  background-image: url('/gif/BG-blue.gif');
+  background-size: 690px 871px;
+  background-repeat: no-repeat;
+}
+
+.bcq-result {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+#bcq-name {
+  font-size: 36px;
+  max-width: 9ch; /* 限制寬度為 9 個字元 */
+  white-space: nowrap; /* 防止文字換行 */
+  overflow: hidden; /* 隱藏超出部分 */
+  text-overflow: ellipsis; /* 超出部分顯示省略號 */
+  /* left: 150px;
+  top: 150px; */
+}
+
+#bcq-name::first-letter {
+  font-size: 90px; /* 設置首字放大的大小 */
+  /*float: left;*/ /* 使首字下沉 */
+  margin-right: 1px; /* 設置首字和後續文字的間距 */
+}
+
+#bcq-type-a {
+  position: absolute;
+  left: 150px;
+  top: 420px;
+}
+
+#bcq-type-b {
+  position: absolute;
+  left: 360px;
+  top: 420px;
+}
+
+#bcq-type-c {
+  position: absolute;
+  left: 570px;
+  top: 420px;
+}
